@@ -17,7 +17,7 @@ trait ControllerService extends HttpService {
         get {
           complete {
 
-            templateEngine.layout("base.mustache", Map { "Name"->"David"})
+            templateEngine.layout("base.mustache", Map("name"->"David"))
 
           }
         }
